@@ -1,0 +1,99 @@
+
+  .head{
+    width: 400px;
+    height: 150px;
+  
+    margin: 20px 350px 100px 450px ;
+    box-shadow: 5px 3px 10px 5px rgb(192, 185, 185);
+}
+.head input{
+margin-right: 50px;
+width: 370px;
+height: 45px;
+/* border-width: 0px; */
+border: solid white;
+border: none;
+margin-left: 10px;
+background-color: transparent;
+outline: none;
+font-size: larger;
+font-weight: bolder;
+
+
+}
+.head textarea{
+    width: 370px;
+    height: 50px;
+    border: none;
+    outline: none;
+}
+.buttonadd{
+    margin-left: 350px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background-color: blueviolet;
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: large;
+   
+}
+  
+  .listItems{
+    width: 100%;
+    height: 100%;
+    
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 32.6%);
+  }
+  .item{
+    
+  width: 300px;
+    margin: 20px 30px 10px 40px ;
+    box-shadow: 5px 3px 10px 5px rgb(192, 185, 185);
+   
+  }
+  .itemupdate{
+   width: 100%;
+   
+  }
+  .itemupdate input{
+    margin-right: 50px;
+width: 370px;
+height: 45px;
+/* border-width: 0px; */
+border: solid white;
+border: none;
+margin-left: 10px;
+background-color: transparent;
+outline: none;
+font-size: larger;
+font-weight: bolder;
+  }
+      
+  .update-new-btn{
+    padding: 10px 10px;
+    color: white;
+    background-color: blueviolet;
+    border: none;
+    outline: none;
+    margin-top: 55px;
+  }
+
+  .post{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px;
+    
+  }
+  .post button{
+    padding: 10px 10px;
+    color: white;
+    background-color: blueviolet;
+    border: none;
+    outline: none;
+  }
+ 
+  

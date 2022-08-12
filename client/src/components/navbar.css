@@ -1,0 +1,12 @@
+.container{
+    height: 70px;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+  position: sticky;
+}
+.box{
+    font-size: large;
+   font-weight: bolder;
+   color: aliceblue;
+}
