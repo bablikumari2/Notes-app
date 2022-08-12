@@ -19,7 +19,7 @@ const [itemsText, setItemsText] = useState("")
     
     e.preventDefault();
     try{
-      const res = await axios.post('http://localhost:8000/api/item', {item: itemText,desc:itemsText})
+      const res = await axios.post('https://babli-notes.herokuapp.com/api/item', {item: itemText,desc:itemsText})
      
       setListItems(prev => [...prev, res.data]);
       setItemText('');
@@ -33,7 +33,7 @@ const [itemsText, setItemsText] = useState("")
   useEffect(()=>{
     const getItemsList = async () => {
       try{
-        const res = await axios.get('http://localhost:8000/api/items')
+        const res = await axios.get('https://babli-notes.herokuapp.com/api/items')
         setListItems(res.data);
         
         console.log('render')
@@ -47,7 +47,7 @@ const [itemsText, setItemsText] = useState("")
   // Delete item when click on delete
   const deleteItem = async (id) => {
     try{
-      const res = await axios.delete(`http://localhost:8000/api/item/${id}`)
+      const res = await axios.delete(`https://babli-notes.herokuapp.com/api/item/${id}`)
       const newListItems = listItems.filter(item=> item._id !== id);
       setListItems(newListItems);
     }catch(err){
@@ -59,7 +59,7 @@ const [itemsText, setItemsText] = useState("")
   const updateItem = async (e) => {
     e.preventDefault()
     try{
-      const res = await axios.put(`http://localhost:8000/api/item/${isUpdating}`, {item: updateItemText})
+      const res = await axios.put(`https://babli-notes.herokuapp.com/api/item/${isUpdating}`, {item: updateItemText})
       console.log(res.data)
       const updatedItemIndex = listItems.findIndex(item => item._id === isUpdating);
       const updatedItem = listItems[updatedItemIndex].item = updateItemText;
